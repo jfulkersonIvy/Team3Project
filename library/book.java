@@ -1,3 +1,6 @@
+// Phase 3 - Library, Trace Crafton, 11/13/23
+// Book class is used to create new book object and checkout/return
+
 package library;
 
 public class Book {
