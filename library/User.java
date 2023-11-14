@@ -1,5 +1,5 @@
 package library;
 
-public class Book {
+public class User {
 
 }
