@@ -30,7 +30,7 @@ public class LibraryApp {
         boolean isValidAccount = false;
         User user = null;
 
-        // W
+        // While account has not been verified, we will continue to ask for the account
         while (!isValidAccount) {
             System.out.println("Enter your account number: ");
             int accountNumber = scan.nextInt();
