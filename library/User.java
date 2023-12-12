@@ -62,4 +62,22 @@ public class User {
     public int getNumberOfBooksCheckedOut() {
         return numberOfBooksCheckedOut;
     }
+    
+    // Static method to create test user accounts
+    public static ArrayList<User> createTestUsers() {
+        ArrayList<User> testUsers = new ArrayList<>();
+
+        // Create and add test users to the list
+        testUsers.add(new User(1001)); // User with account number 1001
+        testUsers.add(new User(1002)); // User with account number 1002
+        testUsers.add(new User(1003)); // User with account number 1003
+
+        return testUsers;
+    }
+
+    // Initialization block to create test users when the class is loaded
+    static {
+        ArrayList<User> testUsers = createTestUsers();
+        // Optionally, you can perform additional actions with the testUsers list here
+    }
 }
