@@ -7,11 +7,12 @@ public class Book {
 
     private String title;
     private String author;
-    private int ISBN;
+    // Use long data type since ISBNs are 13 digits
+    private long ISBN;
     private boolean available;
-
+    
     // Constructor
-    public Book(String title, String author, int ISBN) {
+    public Book(String title, String author, long ISBN) {
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
@@ -29,20 +30,20 @@ public class Book {
     }
 
     // Get book ISBN
-    public int getISBN() {
+    public long getISBN() {
         return ISBN;
     }
 
-    // Identifiy book availability
+    // Identify book availability
     public boolean isAvailable() {
         return available;
     }
 
     // If available, check out book and make unavailable
-    public void chekcoutBook() {
+    public void checkoutBook() {
         if (available) {
             available = false;
-            System.out.println("Book checked out successfully.");
+            System.out.println("Checked out successfully!");
         } else {
             System.out.println("Sorry, this book is currently unavailable.");
         }
@@ -51,6 +52,6 @@ public class Book {
     // If checked out, return book
     public void returnBook() {
         available = true;
-        System.out.println("Book returned successfully.");
+        System.out.println("Book returned successfully!");
     }
 }
