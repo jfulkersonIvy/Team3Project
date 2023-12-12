@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="library.Controllers.MainViewController"
+      alignment="CENTER"
+      spacing="10"
+      padding="20 20 20 20"> <!-- Set Insets for padding -->
+
+    <Button text="View Available Books" onAction="#viewAvailableBooks"/>
+    <Button text="Checkout a Book" onAction="#checkoutBook"/>
+    <Button text="Return a Book" onAction="#returnBook"/>
+    <Button text="Exit" onAction="#exitApp"/>
+</VBox>
